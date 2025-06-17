@@ -1,5 +1,0 @@
-- Blockchain is a decentralized and tamper-proof ledger of transactions.
-- Ethereum allows us to build logic-based applications via smart contracts.
-- Unlike Bitcoin, Ethereum is programmable and supports apps like MediVault.
-- In healthcare, blockchain ensures transparency and user-controlled privacy.
-- Solidity is the smart contract language I’ll use in this project.
