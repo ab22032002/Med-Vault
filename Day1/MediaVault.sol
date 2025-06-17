@@ -19,4 +19,9 @@ contract MediVault {
         require(access[patient][msg.sender], "No Access!");
         return patientRecords[patient];
     }
+    function addRecord(string memory description, string memory ipfsHash) public {
+    Record memory newRecord = Record(description, ipfsHash, msg.sender);
+    patientRecords[msg.sender].push(newRecord);
+   }
+
 }
