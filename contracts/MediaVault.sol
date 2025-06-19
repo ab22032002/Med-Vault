@@ -16,7 +16,11 @@ contract MediVault {
     }
 
     function viewRecord(address patient) public view returns (Record[] memory) {
-        require(access[patient][msg.sender], "No Access!");
+        require(
+        msg.sender == patient || access[patient][msg.sender],
+        "No Access!"
+    );
+
         return patientRecords[patient];
     }
     function addRecord(string memory description, string memory ipfsHash) public {

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MediVault</title>
+</head>
+<body>
+  <h2>MediVault Viewer</h2>
+
+  <button onclick="connectWallet()">Connect Wallet</button>
+  <p id="accountDisplay"></p>
+
+  <br>
+
+  <input type="text" id="patientAddress" placeholder="Enter Patient Address" />
+  <button onclick="getRecords()">View Records</button>
+
+  <div id="records"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.8.2/dist/web3.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
